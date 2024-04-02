@@ -40,3 +40,12 @@ h3 {
     padding-top: 90px;
     height:50vw;
 }
+
+#additional-text a {
+    color: #ccc; 
+    text-decoration: underline; 
+}
+
+#additional-text a:hover {
+    cursor: pointer; 
+}

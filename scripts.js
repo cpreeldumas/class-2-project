@@ -32,8 +32,9 @@ $('#additional-text').css({
     if (topic === 'Usage') {
 $('#column-right').css('background-image', 'url("https://cdn.shopify.com/s/files/1/0560/0732/7881/files/Ingredients_Beetroot-Powder-Detail-1.png")');
 
-// Adding a text element
-$('#column-right').append('<p id="additional-text">Make borscht.<br>Or roast them.<br>Avoid beet hummus.</p>');
+// Adding a text element with a styled link to a website when clicking on "borscht"
+$('#column-right').append('<p id="additional-text">Make <a href="https://natashaskitchen.com/classic-russian-borscht-recipe/">borscht</a>.<br>Or roast them.<br>Avoid beet hummus.</p>');
+
 
 // Adding CSS styling to make the text white
 $('#additional-text').css({
