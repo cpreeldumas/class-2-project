@@ -1,17 +1,44 @@
 $('.card').on('click', function () {
-    var artist = $(this).data('artist')
+    var topic = $(this).data('topic')
 
     $('#column-right').empty()
 
-    if (artist === 'nirvana') {
-        $('#column-right').css('background-image', 'url("https://people.com/thmb/FM0c0-njIY8t6hF8V4YmbW8b-o0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/nirvana-660-0269944e1daa401199afb0b9b4a8706e.jpg")')
-    }
+if (topic === 'Seasonality') {
+$('#column-right').css('background-image', 'url("https://onwisconsin.uwalumni.com/content/uploads/2023/05/beets.png")');
 
-    if (artist === 'blink-182') {
-        $('#column-right').css('background-image', 'url("https://upload.wikimedia.org/wikipedia/en/2/21/Blink-182_-_Dude_Ranch_cover.jpg")')
-    }
+// Adding a text element
+$('#column-right').append('<p id="additional-text">Mid-summer<br>through late fall.</p>');
 
-    if (artist === 'radiohead') {
-        $('#column-right').css('background-image', 'url("https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png")')
-    }
+// Adding CSS styling to make the text white
+$('#additional-text').css({
+'color': 'white',
+'text-shadow': '1px 1px 2px black'
+});
+}
+
+    if (topic === 'Taste') {
+$('#column-right').css('background-image', 'url("https://freshunlimited.in/cdn/shop/products/Beetroot_578x.png?v=1609401234")');
+
+// Adding a text element
+$('#column-right').append('<p id="additional-text">Earthy, sweet, and<br>slightly bitter.</p>');
+
+// Adding CSS styling to make the text white
+$('#additional-text').css({
+'color': 'white',
+'text-shadow': '1px 1px 2px black'
+});
+}
+
+    if (topic === 'Usage') {
+$('#column-right').css('background-image', 'url("https://cdn.shopify.com/s/files/1/0560/0732/7881/files/Ingredients_Beetroot-Powder-Detail-1.png")');
+
+// Adding a text element
+$('#column-right').append('<p id="additional-text">Make borscht.<br>Or roast them.<br>Avoid beet hummus.</p>');
+
+// Adding CSS styling to make the text white
+$('#additional-text').css({
+'color': 'white',
+'text-shadow': '1px 1px 2px black'
+});
+}
 })

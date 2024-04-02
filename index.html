@@ -8,46 +8,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- command-slash -->
-<body>
-    <div class="container">
-        <div id="column-left" class="column">
-            <div class="card" data-artist='nirvana'>
-                <div class="artist-name">
-                    Nirvana
-                </div>
-                <div class="album-title">
-                    Nevermind
-                </div>
+<h1>
+    Beets 101
+</h1>
+
+<style>
+    body {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)), url('https://cdn.mos.cms.futurecdn.net/C3agzMj7nhaK9zMJByibTT-1920-80.jpg.webp');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<div class="container">
+    <div id="column-left" class="column">
+        <div class="card" data-topic='Seasonality'>
+            <div class="artist-name">
+                Seasonality
             </div>
-            <div class="card" data-artist='blink-182'>
-                <div class="artist-name">
-                    Blink 182
-                </div>
-                <div class="album-title">
-                    Dude Ranch
-                </div>
-            </div>
-            <div class="card" data-artist='radiohead'>
-                <div class="artist-name">
-                    Radiohead
-                </div>
-                <div class="album-title">
-                    Ok Computer
-                </div>
+            <div class="album-title">
+                When are beets their best?
             </div>
         </div>
-        <div id="column-right" class="column">
-            Click a card to see the album art.
+        <div class="card" data-topic='Taste'>
+            <div class="artist-name">
+                Taste
+            </div>
+            <div class="album-title">
+                How do beets taste?
+            </div>
+        </div>
+        <div class="card" data-topic='Usage'>
+            <div class="artist-name">
+                Usage
+            </div>
+            <div class="album-title">
+                How can you use beets?
+            </div>
         </div>
     </div>
-    
-    <script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script>
-  <script src="scripts.js"></script>
-  
+    <div id="column-right" class="column">
+        Click a question to see the response.
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+
 </body>
 
 </html>
